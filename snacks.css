@@ -1,0 +1,369 @@
+*{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Franklin Gothic ;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: skyblue;
+    padding: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+}
+nav{
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+nav ul{
+    list-style-type: none;
+    background-color: black;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.3s ease-in;
+    font-size: 20px;
+    background-color: black;
+}
+nav ul a:hover{
+    background-color: black;
+    color: gray;
+    
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+h4{
+    font-size: medium;
+}
+.item h4{
+    padding: 10px;
+    text-align: center;
+    color: gray;
+    font-size: medium;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.item button:hover{
+    transform: scale(1.04);
+}
+@media screen and (max-width: 1000px) {
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+.item{
+    color: aliceblue;
+    font-size: 15px;
+    text-align: center;
+    
+}
+h2{
+    font-family: 'Gill Sans';
+    font-size: xx-large;
+    color: whitesmoke;
+    text-align: center;
+    background-color: rgb(16, 6, 122, 0.5);
+    padding: 20px;
+    display: inline-block; /* or display: inline; */
+    width: 20%; 
+}
+.abouts h2{
+    background-color:  rgb(16, 6, 122, 0.5);
+}
+.abouts p{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: medium;
+    text-align: center;
+    background-color: rgb(16, 6, 122, 0.5);
+}
+#aboutModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 6, 122, 0.5);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalContent {
+    color: white;
+    background: rgb(16, 6, 122, 0.5);
+    padding: 100px;
+    border-radius: 90px;
+    text-align: center;
+}
+.aboutModal p{
+    color: white;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+.aboutModal h2{
+    font-size: x-large;
+    text-align: left;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(16, 6, 122, 0.5);
+}
+#modalContent button {
+    background-color: skyblue;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.about-modal-logo {
+    align-items: normal;
+    width: 20%; 
+    max-height: 350px; 
+    object-fit: cover; 
+    background-color: rgb(16, 6, 122, 0.5);
+    
+}
+p{
+    
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+        color:white;
+        text-align: center;
+        background-color: rgb(16, 6, 122, 0.5);
+
+
+}
+#servicesModal {
+    display: none; 
+}
+#servicesModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 6, 122, 0.5);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#servicesModal #modalContent {
+    color: white;
+    background: rgb(16, 6, 122, 0.5);
+    padding: 100px;
+    border-radius: 90px;
+    text-align: center;
+}
+
+#servicesModal button {
+    background-color: skyblue;
+    color: rgba(16, 6, 122, 0.5);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+
+    
+}
+#servicesModal ul {
+    list-style-type: none;
+    width: auto;
+    font-family: 'Gill Sans';
+    font-size: medium;
+    color: whitesmoke;
+    text-align: center;
+    background-color: rgb(16, 6, 122, 0.5);
+    display: inline-block; 
+}
+
+#servicesModal ul li {
+    margin-bottom: 10px;
+    font-family: 'Gill Sans';
+    font-size: medium;
+    color: whitesmoke;
+    text-align: center;
+    background-color: rgb(16, 6, 122, 0.5);
+    padding: 20px;
+    display: inline-block; 
+}
+.servicess p{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: medium;
+    text-align: center;
+    background-color: rgb(16, 6, 122, 0.5);
+}
+.services-modal-logo{
+    align-items: normal;
+    width: 20%; 
+    max-height: 200px; 
+    object-fit: cover; 
+    background-color: rgb(16, 6, 122, 0.5);
+
+}
+#servicesModal h3 {
+    font-family: 'Gill Sans';
+    font-size: xx-large;
+    color: whitesmoke;
+    text-align: left;
+    background-color: rgb(16, 6, 122, 0.5);
+    padding: 14px;
+    display: inline-block;
+    width: 30%;
+}
+.main-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo-modal-logo {
+    width: 200px; 
+    height: 200px; 
+    margin-left: 20px; 
+}
+.Log-modal-logo {
+    width: 320px; 
+    height: 200px; 
+    margin-right: 20px; 
+
+}
+#snacksTambayanSection {
+    text-align: center;
+    margin-top: 30px;
+    font-size: x-large;
+}
+
+.system-image {
+    width: 300px; 
+    height: auto; 
+    margin-bottom: 20px;
+}
+
+#snacksTambayanSection p {
+    font-size: x-large;
+    margin-bottom: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+#snacksTambayanSection ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+#snacksTambayanSection li {
+    display: inline;
+    margin-right: 10px;
+    font-size: x-large;
+}
+#snacksTambayan {
+    text-align: center;
+    margin-top: 20px; 
+    background-color: black;
+}
+
+#snacksTambayan img {
+    width: 200px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+#snacksTambayan p {
+    font-size: 16px; 
+    margin-bottom: 10px; 
+    background-color: black;
+}
+
+#snacksTambayan span {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: black;
+}
+#snacksTambayan h5 {
+    font-size: 50px;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Your Desired Font', sans-serif; 
+
+}
+#snacksTambayan .snacksTambayan img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 8px;
+}
+
+.snacksTambayan img:hover {
+    transform: scale(1.04);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: auto;
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+}
+
+.center-container img {
+    width: 60%;
+    height: auto;
+    background-color: black;
+}
+.center-container p{
+    background-color: black;
+    color: wheat;
+    font-size: x-large;
+    font-weight: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
